@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import React from 'react';
+import Header from './Header';
 import './App.css';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <h1>Let's build Tinder Clone App! :D</h1>
 
       {/* Header */}
+
       {/* Tinder Cards */}
       {/* Buttons below Tinder cards */}
 
