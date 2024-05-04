@@ -1,3 +1,9 @@
+/* Starting my css code */
+* {
+  margin: 0;
+}
+
+/* Ending my css */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
