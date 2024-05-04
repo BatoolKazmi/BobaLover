@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
 .header {
+    font-family: "Chewy", system-ui;
+    font-weight: 700;
     display: flex;
+    padding: 1em 0em;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #BBDFC5;
+    border-bottom: #021944 0.09em solid;
+}
+
+.header p {
+    font-size: 1.5em;
+}
+
+.person,
+.message {
+    color: white;
+    padding: 0.3em;
+    background-color: #F6A794;
+    border-radius: 50%;
+    border: #021944 0.09em solid;
 }

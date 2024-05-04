@@ -8,9 +8,9 @@ function Header() {
     return (
         // BEM <<<<
         <div className='header'>
-            <PersonIcon />
-            <h2>I am a header</h2>
-            <MessageIcon />
+            <PersonIcon className='person icon' />
+            <p> BobaTinder 🧋🌸🍧</p>
+            <MessageIcon className='message icon' />
         </div>
     )
 }

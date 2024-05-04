@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Let's build Tinder Clone App! :D</h1>
+      {/* <h1>BOBATINDER!</h1> */}
 
       {/* Header */}
       <Header />
