@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+/* Note for image when resizing it you can use the css property::after
+    object-fit: contain;
+*/
+
+:root {
+    --blueberry: #021944;
+    --matcha: #B1D5B2;
+    --lychee: #F6A794;
+    --thai-tea: #E0A878;
+    --taro: #E4CFF7;
+    --milk-tea: #F2DAC4;
+
+    --light-vanilla: #eceae1;
+}
 
 .header {
     font-family: "Chewy", system-ui;
@@ -9,17 +23,19 @@
     align-items: center;
     background-color: #BBDFC5;
     border-bottom: #021944 0.09em solid;
+    color: #021944;
+
 }
 
 .header p {
     font-size: 1.5em;
 }
 
-.person,
-.message {
-    color: white;
+.header .icon {
+    color: var(--light-vanilla);
     padding: 0.3em;
-    background-color: #F6A794;
+    background-color: var(--blueberry);
     border-radius: 50%;
-    border: #021944 0.09em solid;
+    border: var(--blueberry) 0.09em solid;
+    font-size: 0.9em;
 }
