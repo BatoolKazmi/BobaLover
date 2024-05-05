@@ -1,4 +1,5 @@
-import firebase from "firebase";
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -8,7 +9,7 @@ const firebaseConfig = {
     storageBucket: "tinder-clone-733c8.appspot.com",
     messagingSenderId: "262794637839",
     appId: "1:262794637839:web:4a3bd40731fb94a085a97a",
-    measurementId: "G-GDRDXDL3BS"
+    measurementId: "G-GDRDXDL3BS",
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
