@@ -1,0 +1,35 @@
+.card {
+    position: relative;
+    width: 25.5em;
+    padding: 1.25em;
+    max-width: 85vw;
+    height: 70vh;
+    border-radius: 0.8em;
+
+    /* Important for the images to be centered */
+    background-size: cover;
+    background-position: center;
+
+    box-shadow: 0 1.125em 3.3125em 0 rgba(0, 0, 0, 0.3);
+}
+
+.tinderCards_cardContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+/* Making position absolute to stack the cards on top of each other */
+.swipe {
+    position: absolute;
+}
+
+.card>h3 {
+    position: absolute;
+    bottom: 0.3em;
+    color: var(--light-vanilla);
+    padding: 1em;
+    background-color: var(--blueberry);
+    border-radius: 1.5em;
+    margin: 1em;
+}

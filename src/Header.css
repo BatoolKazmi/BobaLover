@@ -3,17 +3,6 @@
     object-fit: contain;
 */
 
-:root {
-    --blueberry: #021944;
-    --matcha: #B1D5B2;
-    --lychee: #F6A794;
-    --thai-tea: #E0A878;
-    --taro: #E4CFF7;
-    --milk-tea: #F2DAC4;
-
-    --light-vanilla: #eceae1;
-}
-
 .header {
     font-family: "Chewy", system-ui;
     font-weight: 700;
