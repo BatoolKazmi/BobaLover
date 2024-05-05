@@ -20,7 +20,6 @@ function App() {
     <div className="App">
       {/* Header */}
       <Header />
-
       {/* Tinder Cards */}
       <Router>
         <Routes>
