@@ -18,7 +18,7 @@ function Header() {
                 <MessageIcon className='message icon' />
             </IconButton>
         </div>
-    )
+    );
 }
 
-export default Header
+export default Header;
