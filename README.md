@@ -1,4 +1,4 @@
-# BobaLover
+# Tinder Clone
 
 ### Type `npm start` in terminal to run
 
