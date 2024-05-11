@@ -13,7 +13,7 @@ function Header() {
             <IconButton>
                 <PersonIcon className='person icon' />
             </IconButton>
-            <p> BobaTinder 🧋🌸🍧</p>
+            <p> Tinder 🔥</p>
             <IconButton>
                 <MessageIcon className='message icon' />
             </IconButton>

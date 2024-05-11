@@ -1,30 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 /* Note for image when resizing it you can use the css property::after
     object-fit: contain;
 */
 
 .header {
-    font-family: "Chewy", system-ui;
+    font-family: "Varela Round", sans-serif;
     font-weight: 700;
     display: flex;
     padding: 1em 0em;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #BBDFC5;
+    background-color: #ffd1d1;
     border-bottom: #021944 0.09em solid;
     color: #021944;
+    padding: 1.2em;
 
 }
+
 
 .header p {
     font-size: 1.5em;
 }
 
 .header .icon {
-    color: var(--light-vanilla);
-    padding: 0.3em;
-    background-color: var(--blueberry);
+    color: #021944;
+    padding: 0.5em;
+    background-color: #fffefb;
     border-radius: 50%;
-    border: var(--blueberry) 0.09em solid;
-    font-size: 0.9em;
+    font-size: 1em;
 }
