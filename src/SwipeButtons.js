@@ -10,7 +10,7 @@ import FlashOnIcon from '@mui/icons-material/FlashOn';
 
 function SwipeButtons() {
     return (
-        <div>
+        <div className='swipeButtons'>
             <h1>Buttons Go Here</h1>
             <ReplayIcon />
             <CloseIcon />

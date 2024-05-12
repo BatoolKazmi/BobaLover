@@ -3,14 +3,14 @@
     width: 25.5em;
     padding: 1.25em;
     max-width: 85vw;
-    height: 65vh;
+    height: 63vh;
     border-radius: 0.8em;
 
     /* Important for the images to be centered */
     background-size: cover;
     background-position: center;
 
-    box-shadow: 0 1.125em 3.3125em 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.7em 2em 0 rgba(0, 0, 0, 0.3);
 }
 
 .tinderCards_cardContainer {
