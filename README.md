@@ -13,3 +13,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 - Install firebase (npm i firebase) – or might be something else --> my own database
 - npm instal react router
 
+### Other Items used
+- Using Material UI Avatar: https://mui.com/material-ui/api/avatar/
+
