@@ -11,4 +11,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 - Install Material-ui (npm install @material-ui/icons) --> for the icons
 - Install react-tinder-card (https://www.npmjs.com/package/react-tinder-card) --> swiping motion for the tinder cards
 - Install firebase (npm i firebase) – or might be something else --> my own database
+- npm instal react router
 
