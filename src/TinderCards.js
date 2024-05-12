@@ -4,10 +4,16 @@ import React, { useEffect, useState } from "react";
 import TinderCard from 'react-tinder-card';
 import database from "./firebase";
 import "./TinderCards.css";
+// Used to lock scrolling ability
+// https://usehooks.com/uselockbodyscroll#:~:text=The%20useLockBodyScroll%20hook%20temporarily%20disables,that%20requires%20the%20user's%20focus.
+import { useLockBodyScroll } from "@uidotdev/usehooks";
+
 
 
 // Can use function or ES6 arrow function
 function TinderCards() {
+
+    useLockBodyScroll();
 
     // people called & modifier is setPeople
     // setPeople([...people, 'sony', 'qazi']) -- way of pushing (spread)
@@ -32,16 +38,20 @@ function TinderCards() {
     //  Piece of code which runs based on a condition
     useEffect(() => {
 
-        database.collection('people').onSnapshot(snapshot => (
-            setPeople(snapshot.docs.map(doc => doc.data()))
-        ))
-        // This will run once when the component loads & never runs again
+        const unsubscribe = database
+            .collection('people')
+            .onSnapshot(snapshot =>
+            (setPeople(snapshot.docs.map(doc => doc.data()))
+            ))
+
+        return () => {
+            unsubscribe();
+        }
+
     }, []);
 
     return (
         <div>
-            <h1>Tinder Cards</h1>
-
             <div class="tinderCards_cardContainer">
                 {people.map(person => (
                     <TinderCard className="swipe"
@@ -60,6 +70,7 @@ function TinderCards() {
             </div>
         </div>
     );
+
 }
 
 export default TinderCards;
