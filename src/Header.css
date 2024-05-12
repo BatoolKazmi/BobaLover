@@ -7,7 +7,7 @@
     font-family: "Varela Round", sans-serif;
     font-weight: 700;
     display: flex;
-    padding: 0.2em 0em;
+    padding: 0.4em 0em;
     justify-content: space-evenly;
     align-items: center;
     background-color: #ffd1d1;
@@ -17,8 +17,9 @@
 }
 
 
-.header p {
+p {
     font-size: 1.5em;
+    color: #021944;
 }
 
 .header .icon {
