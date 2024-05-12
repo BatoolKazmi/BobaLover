@@ -3,17 +3,26 @@ import React from 'react';
 import "./Header.css";
 import PersonIcon from '@mui/icons-material/Person';
 import MessageIcon from '@mui/icons-material/Message';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import { IconButton } from '@mui/material';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 // Can use function or ES6 arrow function
-function Header() {
+function Header({ backButton }) {
+
+    const navigate = useNavigate();
     return (
-        // BEM <<<<
         <div className='header'>
-            <IconButton>
-                <PersonIcon className='person icon' />
-            </IconButton>
+            {/* Adding an if else statement of the buttons depending on which page we are in */}
+            {backButton ? (
+                <IconButton onClick={() => navigate(backButton)}>
+                    <ArrowBackIosNewIcon className='back icon' />
+                </IconButton>
+            ) : (
+                <IconButton>
+                    <PersonIcon className='person icon' />
+                </IconButton>)}
+
             {/* Adding Linking to main page (with the cards) */}
             <Link to="/" style={{ textDecoration: 'none' }}>
                 <p>Tinder 🔥</p>

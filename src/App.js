@@ -20,19 +20,19 @@ import {
 function App() {
   return (
     <div className="App">
-      {/* Header */}
-      {/* Tinder Cards */}
       <Router>
-        <Header />
         <Routes>
-          <Route path="/chat" element={<h1>I am the chatpage</h1>} />
+          <Route path="/chat" element={<>
+            <Header backButton="/" />
+            <Chats />
+          </>} />
           <Route path="/" element={<>
+            <Header />
             <TinderCards />
             <SwipeButtons />
           </>} />
         </Routes>
       </Router>
-      {/* Buttons below Tinder cards */}
       {/* Chats screen (top right corner) */}
       {/* Individual chat screen  */}
     </div>
