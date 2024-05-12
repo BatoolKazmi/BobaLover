@@ -4,6 +4,7 @@ import Header from './Header';
 import TinderCards from './TinderCards';
 import './App.css';
 import SwipeButtons from './SwipeButtons';
+import Chats from './Chats';
 
 
 // react-router-dom v6 (new version 2024)
@@ -33,8 +34,6 @@ function App() {
           </>} />
         </Routes>
       </Router>
-      {/* Chats screen (top right corner) */}
-      {/* Individual chat screen  */}
     </div>
   );
 }
