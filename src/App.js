@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './Header';
 import TinderCards from './TinderCards';
 import './App.css';
+import SwipeButtons from './SwipeButtons';
 
 // react-router-dom v6 (new version 2024)
 // Switch is replaced by routes "Routes"
@@ -24,7 +25,10 @@ function App() {
       <Router>
         <Routes>
           <Route path="/chat" element={<h1>I am the chatpage</h1>} />
-          <Route path="/" element={<TinderCards />} />
+          <Route path="/" element={<>
+            <TinderCards />
+            <SwipeButtons />
+          </>} />
         </Routes>
       </Router>
       {/* Buttons below Tinder cards */}
