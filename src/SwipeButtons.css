@@ -1,7 +1,39 @@
 .swipeButtons {
     position: fixed;
-    bottom: 3vh;
+    bottom: 3.7vh;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+}
+
+/* Special class for material-ui: swipeButtons */
+.swipeButtons .MuiIconButton-root {
+    background-color: white;
+    box-shadow: 0em 0.625em 3.3125em 0em rgba(0, 0, 0, 0.3) !important;
+}
+
+/* have to add !important for things to work */
+.repeat {
+    color: #3E6990 !important;
+    border: 0.1em solid #3E6990 !important;
+}
+
+.left {
+    color: #931621 !important;
+    border: 0.1em solid #931621 !important;
+}
+
+.star {
+    color: #f4b748 !important;
+    border: 0.1em solid #f4b748 !important;
+}
+
+.right {
+    color: #F46197 !important;
+    border: 0.1em solid #F46197 !important;
+}
+
+.lightning {
+    color: #84BC9C !important;
+    border: 0.1em solid #84BC9C !important;
 }
